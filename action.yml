@@ -1,0 +1,17 @@
+name: 'Publish a Python Package on Anaconda'
+description: 'Build and Publish conda package'
+author: 'Jason Dsouza'
+branding:
+  icon: 'package'  
+  color: 'purple'
+inputs: 
+  subDir:
+    description: 'Sub-directory with project'
+    default: '.'
+  AnacondaUsername:
+    description: 'Anaconda Username'
+  AnacondaPassword:
+    description: 'Anaconda Password'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
